@@ -1,0 +1,6 @@
+framework module Pods_StrokeDrawingView_Example {
+  umbrella header "Pods-StrokeDrawingView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
