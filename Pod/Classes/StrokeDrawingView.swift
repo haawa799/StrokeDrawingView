@@ -40,6 +40,7 @@ public protocol StrokeDrawingViewDataSource: class {
 
 public class StrokeDrawingView: UIView {
   
+  private let defaultMiterLimit: CGFloat = 4
   private var tempPathes = [UIBezierPath]()
   private var shouldDraw = false
   private var strokeLayers = [CAShapeLayer]()
@@ -152,7 +153,7 @@ extension StrokeDrawingView {
         
         let color = dataSource?.colorForStrokeAtIndex(counter) ?? UIColor.blackColor()
         
-        path.miterLimit = 4
+        path.miterLimit = defaultMiterLimit
         path.lineCapStyle = CGLineCap.Round
         path.lineJoinStyle = CGLineJoin.Round
         path.lineWidth = path.lineWidth * scale
