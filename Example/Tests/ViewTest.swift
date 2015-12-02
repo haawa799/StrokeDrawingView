@@ -8,7 +8,7 @@
 
 import FBSnapshotTestCase
 import UIKit
-@testable import StrokeDrawingView
+import StrokeDrawingView
 
 class MySpec: FBSnapshotTestCase {
   
