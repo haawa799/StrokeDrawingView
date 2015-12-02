@@ -1,6 +1,6 @@
 # StrokeDrawingView
 
-[![CI Status](http://img.shields.io/travis/Andriy K./StrokeDrawingView.svg?style=flat)](https://travis-ci.org/Andriy K./StrokeDrawingView)
+[![Build Status](https://www.bitrise.io/app/3f8dacd63325688a.svg?token=TBjZw8_h1KSMiRyFIwPE8g&branch=master)](https://www.bitrise.io/app/3f8dacd63325688a)
 [![Version](https://img.shields.io/cocoapods/v/StrokeDrawingView.svg?style=flat)](http://cocoapods.org/pods/StrokeDrawingView)
 [![License](https://img.shields.io/cocoapods/l/StrokeDrawingView.svg?style=flat)](http://cocoapods.org/pods/StrokeDrawingView)
 [![Platform](https://img.shields.io/cocoapods/p/StrokeDrawingView.svg?style=flat)](http://cocoapods.org/pods/StrokeDrawingView)
