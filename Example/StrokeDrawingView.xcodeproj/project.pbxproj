@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4303AAC31C0F15F600E1CA20 /* ViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303AAC21C0F15F600E1CA20 /* ViewTest.swift */; };
-		4303AAC51C0F2FD800E1CA20 /* reference_testExample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4303AAC41C0F2FD800E1CA20 /* reference_testExample@2x.png */; };
+		4303AACC1C0F8FB400E1CA20 /* stroked.png in Resources */ = {isa = PBXBuildFile; fileRef = 4303AACB1C0F8FB400E1CA20 /* stroked.png */; };
+		4303AACE1C0F944900E1CA20 /* StrokeDrawingViewTests in Resources */ = {isa = PBXBuildFile; fileRef = 4303AACD1C0F944900E1CA20 /* StrokeDrawingViewTests */; };
 		436D07551C0DF50D00E28078 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D07541C0DF50D00E28078 /* SWXMLHash.swift */; };
 		436D07571C0DF61800E28078 /* 数.svg in Resources */ = {isa = PBXBuildFile; fileRef = 436D07561C0DF61800E28078 /* 数.svg */; };
 		438A75C71C0DEBC40098ED11 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A75C61C0DEBC40098ED11 /* SVGPath.swift */; };
@@ -36,7 +37,8 @@
 		14727CF0538FE7180DC0B670 /* Pods-StrokeDrawingView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Example/Pods-StrokeDrawingView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36B7393DAC326B5ED82B5BC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4303AAC21C0F15F600E1CA20 /* ViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTest.swift; sourceTree = "<group>"; };
-		4303AAC41C0F2FD800E1CA20 /* reference_testExample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reference_testExample@2x.png"; sourceTree = "<group>"; };
+		4303AACB1C0F8FB400E1CA20 /* stroked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stroked.png; sourceTree = "<group>"; };
+		4303AACD1C0F944900E1CA20 /* StrokeDrawingViewTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StrokeDrawingViewTests; sourceTree = "<group>"; };
 		436D07541C0DF50D00E28078 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 		436D07561C0DF61800E28078 /* 数.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "数.svg"; sourceTree = "<group>"; };
 		438A75C61C0DEBC40098ED11 /* SVGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
@@ -99,9 +101,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4303AAC61C0F375600E1CA20 /* View tests */ = {
+			isa = PBXGroup;
+			children = (
+				4303AACB1C0F8FB400E1CA20 /* stroked.png */,
+			);
+			path = "View tests";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				4303AACD1C0F944900E1CA20 /* StrokeDrawingViewTests */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for StrokeDrawingView */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -158,7 +169,7 @@
 		607FACE91AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4303AAC41C0F2FD800E1CA20 /* reference_testExample@2x.png */,
+				4303AAC61C0F375600E1CA20 /* View tests */,
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -261,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4303AACC1C0F8FB400E1CA20 /* stroked.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -272,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4303AAC51C0F2FD800E1CA20 /* reference_testExample@2x.png in Resources */,
+				4303AACE1C0F944900E1CA20 /* StrokeDrawingViewTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,24 +7,18 @@
 //
 
 import FBSnapshotTestCase
+import UIKit
 @testable import StrokeDrawingView
 
-class ViewTest: FBSnapshotTestCase {
+class MySpec: FBSnapshotTestCase {
   
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-//    self.recordMode = true
-  }
-  
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
-  }
-  
-  func testExample() {
+  func testView() {
+    
+//    recordMode = true
+    
     let strokedView = StrokeDrawingView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-    strokedView.backgroundColor = UIColor.cyanColor()
+    strokedView.backgroundColor = UIColor.yellowColor()
+    
     FBSnapshotVerifyView(strokedView)
   }
   

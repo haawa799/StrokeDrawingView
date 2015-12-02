@@ -13,9 +13,9 @@ PODS:
   - StrokeDrawingView (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - Nimble
   - Nimble-Snapshots
+  - Quick
   - StrokeDrawingView (from `../`)
 
 EXTERNAL SOURCES:
