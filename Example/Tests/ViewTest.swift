@@ -17,7 +17,7 @@ class MySpec: FBSnapshotTestCase {
 //    recordMode = true
     
     let strokedView = StrokeDrawingView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-    strokedView.backgroundColor = UIColor.yellowColor()
+    strokedView.backgroundColor = UIColor.greenColor()
     
     FBSnapshotVerifyView(strokedView)
   }
