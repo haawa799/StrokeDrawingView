@@ -6,7 +6,6 @@
 //  Copyright © 2015 CocoaPods. All rights reserved.
 //
 
-import XCTest
 import FBSnapshotTestCase
 @testable import StrokeDrawingView
 
@@ -15,7 +14,7 @@ class ViewTest: FBSnapshotTestCase {
   override func setUp() {
     super.setUp()
     // Put setup code here. This method is called before the invocation of each test method in the class.
-//    self.recordMode = true
+    self.recordMode = true
   }
   
   override func tearDown() {
