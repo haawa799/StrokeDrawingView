@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4303AAC31C0F15F600E1CA20 /* ViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303AAC21C0F15F600E1CA20 /* ViewTest.swift */; };
 		436D07551C0DF50D00E28078 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D07541C0DF50D00E28078 /* SWXMLHash.swift */; };
 		436D07571C0DF61800E28078 /* 数.svg in Resources */ = {isa = PBXBuildFile; fileRef = 436D07561C0DF61800E28078 /* 数.svg */; };
 		438A75C71C0DEBC40098ED11 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A75C61C0DEBC40098ED11 /* SVGPath.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		14727CF0538FE7180DC0B670 /* Pods-StrokeDrawingView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Example/Pods-StrokeDrawingView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36B7393DAC326B5ED82B5BC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4303AAC21C0F15F600E1CA20 /* ViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTest.swift; sourceTree = "<group>"; };
 		436D07541C0DF50D00E28078 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 		436D07561C0DF61800E28078 /* 数.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "数.svg"; sourceTree = "<group>"; };
 		438A75C61C0DEBC40098ED11 /* SVGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				4303AAC21C0F15F600E1CA20 /* ViewTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4303AAC31C0F15F600E1CA20 /* ViewTest.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -463,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -481,6 +487,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -500,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14727CF0538FE7180DC0B670 /* Pods-StrokeDrawingView_Example.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StrokeDrawingView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,7 +521,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0AFA8B2D8B676C75EEABFFC /* Pods-StrokeDrawingView_Example.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = StrokeDrawingView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
