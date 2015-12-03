@@ -22,7 +22,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeP-Qh-Y7m" customClass="StrokeDrawingView" customModule="StrokeDrawingView">
                                 <rect key="frame" x="90" y="90" width="420" height="420"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.97948717948717945" green="0.97725829980204926" blue="0.94825367004358108" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GeP-Qh-Y7m" secondAttribute="height" multiplier="1:1" id="Eg5-NV-gcD"/>
                                 </constraints>
