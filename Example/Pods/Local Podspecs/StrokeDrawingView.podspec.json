@@ -1,25 +1,20 @@
 {
   "name": "StrokeDrawingView",
   "version": "0.1.0",
-  "summary": "A short description of StrokeDrawingView.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/StrokeDrawingView",
-  "license": "MIT",
+  "summary": "View which takes array of UIBezierPath as an input. And allows you to display them as stroke-by-stroke drawing.",
+  "license": {
+    "type": "MIT"
+  },
   "authors": {
-    "Andriy K.": "haawaplus@gmail.com"
+    "Andriy Kharchyshyn": "haawaplus@gmail.com"
   },
-  "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/StrokeDrawingView.git",
-    "tag": "0.1.0"
-  },
+  "requires_arc": true,
   "platforms": {
     "ios": "8.0"
   },
-  "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "StrokeDrawingView": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source": {
+    "git": "https://github.com/haawa799/StrokeDrawingView.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "Pod/Classes/**/*"
 }

@@ -54,14 +54,8 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-StrokeDrawingView_Tests/StrokeDrawingView.framework'
   install_framework 'Pods-StrokeDrawingView_Tests/FBSnapshotTestCase.framework'
-  install_framework 'Pods-StrokeDrawingView_Tests/Nimble.framework'
-  install_framework 'Pods-StrokeDrawingView_Tests/Nimble_Snapshots.framework'
-  install_framework 'Pods-StrokeDrawingView_Tests/Quick.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-StrokeDrawingView_Tests/StrokeDrawingView.framework'
   install_framework 'Pods-StrokeDrawingView_Tests/FBSnapshotTestCase.framework'
-  install_framework 'Pods-StrokeDrawingView_Tests/Nimble.framework'
-  install_framework 'Pods-StrokeDrawingView_Tests/Nimble_Snapshots.framework'
-  install_framework 'Pods-StrokeDrawingView_Tests/Quick.framework'
 fi

@@ -7,9 +7,5 @@ end
 
 target 'StrokeDrawingView_Tests', :exclusive => true do
   pod "StrokeDrawingView", :path => "../"
-
-  pod 'Quick'
-  pod 'Nimble'
   pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
 end
