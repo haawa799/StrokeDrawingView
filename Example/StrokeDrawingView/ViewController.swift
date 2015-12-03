@@ -50,7 +50,7 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var strokedView: StrokeDrawingView! {
     didSet {
-      strokedView.dataSource = self
+//      strokedView.dataSource = self
     }
   }
   

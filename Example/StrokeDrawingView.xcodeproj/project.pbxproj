@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4303AAC31C0F15F600E1CA20 /* ViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303AAC21C0F15F600E1CA20 /* ViewTest.swift */; };
-		4303AACC1C0F8FB400E1CA20 /* stroked.png in Resources */ = {isa = PBXBuildFile; fileRef = 4303AACB1C0F8FB400E1CA20 /* stroked.png */; };
-		4303AACE1C0F944900E1CA20 /* StrokeDrawingViewTests in Resources */ = {isa = PBXBuildFile; fileRef = 4303AACD1C0F944900E1CA20 /* StrokeDrawingViewTests */; };
+		431629C51C105AE700F2BE44 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A75C61C0DEBC40098ED11 /* SVGPath.swift */; };
 		436D07551C0DF50D00E28078 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436D07541C0DF50D00E28078 /* SWXMLHash.swift */; };
 		436D07571C0DF61800E28078 /* 数.svg in Resources */ = {isa = PBXBuildFile; fileRef = 436D07561C0DF61800E28078 /* 数.svg */; };
+		437A7AB81C1086B4008D82E8 /* StrokesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A7AB71C1086B4008D82E8 /* StrokesTest.swift */; };
 		438A75C71C0DEBC40098ED11 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A75C61C0DEBC40098ED11 /* SVGPath.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AD3875EDE702A139973F7958 /* Pods_StrokeDrawingView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96311C5E2A7408357CB15E38 /* Pods_StrokeDrawingView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C0C8D5688A8DD34787CDC2A7 /* Pods_StrokeDrawingView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F5EDFFAD21DE874459D2D6 /* Pods_StrokeDrawingView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -36,11 +34,9 @@
 /* Begin PBXFileReference section */
 		14727CF0538FE7180DC0B670 /* Pods-StrokeDrawingView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Example/Pods-StrokeDrawingView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36B7393DAC326B5ED82B5BC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4303AAC21C0F15F600E1CA20 /* ViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTest.swift; sourceTree = "<group>"; };
-		4303AACB1C0F8FB400E1CA20 /* stroked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stroked.png; sourceTree = "<group>"; };
-		4303AACD1C0F944900E1CA20 /* StrokeDrawingViewTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StrokeDrawingViewTests; sourceTree = "<group>"; };
 		436D07541C0DF50D00E28078 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 		436D07561C0DF61800E28078 /* 数.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "数.svg"; sourceTree = "<group>"; };
+		437A7AB71C1086B4008D82E8 /* StrokesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokesTest.swift; sourceTree = "<group>"; };
 		438A75C61C0DEBC40098ED11 /* SVGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
 		49880ACE9443BB03D1FAB779 /* Pods-StrokeDrawingView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Tests/Pods-StrokeDrawingView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5A07545B2C3890D01E97DDC5 /* Pods-StrokeDrawingView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Tests/Pods-StrokeDrawingView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,7 +49,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* StrokeDrawingView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrokeDrawingView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		96311C5E2A7408357CB15E38 /* Pods_StrokeDrawingView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StrokeDrawingView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0854A38A6204ED31A36ACA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0AFA8B2D8B676C75EEABFFC /* Pods-StrokeDrawingView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Example/Pods-StrokeDrawingView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,18 +96,9 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4303AAC61C0F375600E1CA20 /* View tests */ = {
-			isa = PBXGroup;
-			children = (
-				4303AACB1C0F8FB400E1CA20 /* stroked.png */,
-			);
-			path = "View tests";
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				4303AACD1C0F944900E1CA20 /* StrokeDrawingViewTests */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for StrokeDrawingView */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -159,8 +145,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				4303AAC21C0F15F600E1CA20 /* ViewTest.swift */,
+				437A7AB71C1086B4008D82E8 /* StrokesTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -169,7 +154,6 @@
 		607FACE91AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4303AAC61C0F375600E1CA20 /* View tests */,
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -272,7 +256,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4303AACC1C0F8FB400E1CA20 /* stroked.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -284,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4303AACE1C0F944900E1CA20 /* StrokeDrawingViewTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,8 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4303AAC31C0F15F600E1CA20 /* ViewTest.swift in Sources */,
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				431629C51C105AE700F2BE44 /* SVGPath.swift in Sources */,
+				437A7AB81C1086B4008D82E8 /* StrokesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +535,7 @@
 			baseConfigurationReference = 5A07545B2C3890D01E97DDC5 /* Pods-StrokeDrawingView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -565,6 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrokeDrawingView_Example.app/StrokeDrawingView_Example";
 			};
 			name = Debug;
@@ -574,6 +558,7 @@
 			baseConfigurationReference = 49880ACE9443BB03D1FAB779 /* Pods-StrokeDrawingView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
