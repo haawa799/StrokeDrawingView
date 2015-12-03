@@ -10,38 +10,6 @@ import FBSnapshotTestCase
 import UIKit
 import StrokeDrawingView
 
-//class TestCase1: FBSnapshotTestCase {
-//  
-//  let dataSource = TestDataSource()
-//  
-//  var viewToTest: StrokeDrawingView!
-//  
-//  override func setUp() {
-//    super.setUp()
-//    
-//    viewToTest = StrokeDrawingView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-//    viewToTest.dataSource = dataSource
-//    viewToTest.backgroundColor = UIColor.whiteColor()
-//    viewToTest.drawRect(viewToTest.bounds)
-//    
-//    recordMode = true
-//    usesDrawViewHierarchyInRect = true
-//  }
-//  
-//  func testA() {
-//    FBSnapshotVerifyView(viewToTest)
-//  }
-//  
-//  func testB() {
-//    viewToTest.setStrokesProgress(1)
-//    viewToTest.drawRect(viewToTest.bounds)
-//    FBSnapshotVerifyView(viewToTest)
-//  }
-//  
-//  func baseTestWithDelay(delay: Double) {
-//  }
-//  
-//}
 
 class TestCase0: FBSnapshotTestCase {
   let dataSource = TestDataSource()
@@ -56,42 +24,16 @@ class TestCase0: FBSnapshotTestCase {
     viewToTest.backgroundColor = UIColor.whiteColor()
     viewToTest.drawRect(viewToTest.bounds)
     
-    recordMode = true
+//    recordMode = true
     usesDrawViewHierarchyInRect = true
   }
   
-  func testA() {
+  func testFullDrawn() {
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
     
-    let expectation = expectationWithDescription("3")
     
-    viewToTest.stopForeverAnimation()
-    viewToTest.playForever(3.0)
-    performWithDelay(13) { () -> Void in
-      self.viewToTest.stopForeverAnimation()
-      self.viewToTest.drawRect(self.viewToTest.bounds)
-      self.FBSnapshotVerifyView(self.viewToTest)
-      expectation.fulfill()
-    }
-    
-    waitForExpectationsWithTimeout(14, handler: nil)
-    
-  }
-  
-  func testB() {
-    
-    let expectation = expectationWithDescription("3")
-    
-    viewToTest.stopForeverAnimation()
-    viewToTest.playForever(3.0)
-    performWithDelay(3) { () -> Void in
-      self.viewToTest.stopForeverAnimation()
-      self.viewToTest.drawRect(self.viewToTest.bounds)
-      self.FBSnapshotVerifyView(self.viewToTest)
-      expectation.fulfill()
-    }
-    
-    waitForExpectationsWithTimeout(4, handler: nil)
-    
+    FBSnapshotVerifyView(viewToTest)
   }
   
 }
