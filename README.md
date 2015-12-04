@@ -74,7 +74,7 @@ extension ViewController: StrokeDrawingViewDataSource {
 ```
 
 #### 4. Use following methods to control animation
-```
+```swift
   /// Use this method to run looped animation
   func playForever(delayBeforeEach: CFTimeInterval = 0) {
   
