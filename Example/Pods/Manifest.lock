@@ -8,14 +8,10 @@ PODS:
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - StrokeDrawingView (from `../`)
-
-EXTERNAL SOURCES:
-  StrokeDrawingView:
-    :path: ../
+  - StrokeDrawingView
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  StrokeDrawingView: 183d073b0fc40bbd3bc59b37cc69a79f0d6786bb
+  StrokeDrawingView: 89e7e237d502a3a379ae004ef6d6a41ad6c5ce94
 
 COCOAPODS: 0.38.2
