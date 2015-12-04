@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430915861C116D2E0097A19F /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430915851C116D2E0097A19F /* Kanji.swift */; };
+		430915871C11708D0097A19F /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430915851C116D2E0097A19F /* Kanji.swift */; };
 		430ECC141C108A7700087B43 /* StrokeDrawingViewTests in Resources */ = {isa = PBXBuildFile; fileRef = 430ECC131C108A7700087B43 /* StrokeDrawingViewTests */; };
-		431629C51C105AE700F2BE44 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A75C61C0DEBC40098ED11 /* SVGPath.swift */; };
-		436D07571C0DF61800E28078 /* 数.svg in Resources */ = {isa = PBXBuildFile; fileRef = 436D07561C0DF61800E28078 /* 数.svg */; };
 		437A7AB81C1086B4008D82E8 /* StrokesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A7AB71C1086B4008D82E8 /* StrokesTest.swift */; };
-		438A75C71C0DEBC40098ED11 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A75C61C0DEBC40098ED11 /* SVGPath.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,10 +33,9 @@
 /* Begin PBXFileReference section */
 		14727CF0538FE7180DC0B670 /* Pods-StrokeDrawingView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Example/Pods-StrokeDrawingView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36B7393DAC326B5ED82B5BC5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		430915851C116D2E0097A19F /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		430ECC131C108A7700087B43 /* StrokeDrawingViewTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StrokeDrawingViewTests; sourceTree = "<group>"; };
-		436D07561C0DF61800E28078 /* 数.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "数.svg"; sourceTree = "<group>"; };
 		437A7AB71C1086B4008D82E8 /* StrokesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokesTest.swift; sourceTree = "<group>"; };
-		438A75C61C0DEBC40098ED11 /* SVGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
 		49880ACE9443BB03D1FAB779 /* Pods-StrokeDrawingView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Tests/Pods-StrokeDrawingView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5A07545B2C3890D01E97DDC5 /* Pods-StrokeDrawingView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Tests/Pods-StrokeDrawingView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StrokeDrawingView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeDrawingView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +121,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				438A75C61C0DEBC40098ED11 /* SVGPath.swift */,
+				430915851C116D2E0097A19F /* Kanji.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -136,7 +134,6 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				436D07561C0DF61800E28078 /* 数.svg */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -260,7 +257,6 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				430ECC141C108A7700087B43 /* StrokeDrawingViewTests in Resources */,
-				436D07571C0DF61800E28078 /* 数.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +367,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430915861C116D2E0097A19F /* Kanji.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				438A75C71C0DEBC40098ED11 /* SVGPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				431629C51C105AE700F2BE44 /* SVGPath.swift in Sources */,
 				437A7AB81C1086B4008D82E8 /* StrokesTest.swift in Sources */,
+				430915871C11708D0097A19F /* Kanji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

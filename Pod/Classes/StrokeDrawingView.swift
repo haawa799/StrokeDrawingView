@@ -146,7 +146,7 @@ extension StrokeDrawingView {
     
     let scale: CGFloat = bounds.height / drawingSize.height
     
-    if shouldDraw == true && tempPathes.count > 0{
+    if shouldDraw == true && tempPathes.count > 0 {
       //// Color Declarations
       var counter = 0
       for path in tempPathes {
@@ -160,6 +160,7 @@ extension StrokeDrawingView {
         path.applyTransform(CGAffineTransformMakeScale(scale, scale))
         
         let shapeLayer = CAShapeLayer()
+        shapeLayer.bounds = frame
         shapeLayer.path = path.CGPath
         shapeLayer.fillColor = nil
         shapeLayer.strokeColor = color.CGColor
@@ -196,7 +197,7 @@ extension StrokeDrawingView {
     super.layoutSubviews()
     
     for stroke in strokeLayers {
-      stroke.frame = self.bounds
+      stroke.frame = self.frame
     }
   }
 }
@@ -233,3 +234,4 @@ public func performWithDelay(delay: Double, closure: () -> Void) {
     ),
     dispatch_get_main_queue(), closure)
 }
+
