@@ -15,6 +15,12 @@
 
 ## Usage
 
+#### 0. Import
+
+```swift
+import StrokeDrawingView
+```
+
 #### 1. Create a StrokeDrawingView
 
 ###### In code :
