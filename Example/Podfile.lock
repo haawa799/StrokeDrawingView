@@ -4,11 +4,18 @@ PODS:
   - FBSnapshotTestCase/Core (2.0.7)
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
+  - StrokeDrawingView (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
+  - StrokeDrawingView (from `../`)
+
+EXTERNAL SOURCES:
+  StrokeDrawingView:
+    :path: ../
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
+  StrokeDrawingView: 183d073b0fc40bbd3bc59b37cc69a79f0d6786bb
 
 COCOAPODS: 0.38.2

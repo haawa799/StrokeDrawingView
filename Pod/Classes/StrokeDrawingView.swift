@@ -41,7 +41,7 @@ public protocol StrokeDrawingViewDataSource: class {
 public class StrokeDrawingView: UIView {
   
   private let defaultMiterLimit: CGFloat = 4
-  private var tempPathes = [UIBezierPath]()
+  private var numberOfStrokes: Int { return dataSource?.numberOfStrokes() ?? 0 }
   private var shouldDraw = false
   private var strokeLayers = [CAShapeLayer]()
   private var drawingSize = CGSizeZero
@@ -58,12 +58,6 @@ public class StrokeDrawingView: UIView {
     didSet {
       guard let dataSource = dataSource else {return}
       drawingSize = dataSource.sizeOfDrawing()
-      let numberOfStrokes = dataSource.numberOfStrokes()
-      tempPathes = [UIBezierPath]()
-      for i in 0..<numberOfStrokes {
-        let path = dataSource.pathForIndex(i)
-        tempPathes.append(path)
-      }
       shouldDraw = true
       setNeedsDisplay()
     }
@@ -144,37 +138,23 @@ extension StrokeDrawingView {
   
   private func drawIfNeeded() {
     
-    let scale: CGFloat = bounds.height / drawingSize.height
-    
-    if shouldDraw == true && tempPathes.count > 0 {
-      //// Color Declarations
-      var counter = 0
-      for path in tempPathes {
+    if shouldDraw == true && numberOfStrokes > 0 {
+      
+      for strokeIndex in 0..<numberOfStrokes {
         
-        let color = dataSource?.colorForStrokeAtIndex(counter) ?? UIColor.blackColor()
-        
-        path.miterLimit = defaultMiterLimit
-        path.lineCapStyle = CGLineCap.Round
-        path.lineJoinStyle = CGLineJoin.Round
-        path.lineWidth = path.lineWidth * scale
-        path.applyTransform(CGAffineTransformMakeScale(scale, scale))
-        
+        let color = dataSource?.colorForStrokeAtIndex(strokeIndex) ?? UIColor.blackColor()
         let shapeLayer = CAShapeLayer()
-        shapeLayer.bounds = frame
-        shapeLayer.path = path.CGPath
         shapeLayer.fillColor = nil
         shapeLayer.strokeColor = color.CGColor
-        shapeLayer.miterLimit = path.miterLimit
+        shapeLayer.miterLimit = defaultMiterLimit
         shapeLayer.lineCap = kCALineCapRound
         shapeLayer.lineJoin = kCALineJoinRound
-        shapeLayer.lineWidth = path.lineWidth
+        
         shapeLayer.strokeEnd = 0.0
         layer.addSublayer(shapeLayer)
         strokeLayers.append(shapeLayer)
-        
-        counter++
-        shouldDraw = false
       }
+      shouldDraw = false
     }
   }
   
@@ -196,9 +176,22 @@ extension StrokeDrawingView {
   public override func layoutSubviews() {
     super.layoutSubviews()
     
-    for stroke in strokeLayers {
-      stroke.frame = self.frame
+    guard let dataSource = dataSource where strokeLayers.count > 0 else {return}
+    
+    let scale: CGFloat = bounds.height / drawingSize.height
+    
+    for strokeIndex in 0..<numberOfStrokes {
+      
+      let strokeLayer = strokeLayers[strokeIndex]
+      
+      let path = dataSource.pathForIndex(strokeIndex)
+      let pathCopy = UIBezierPath(CGPath: path.CGPath)
+      pathCopy.applyTransform(CGAffineTransformMakeScale(scale, scale))
+      
+      strokeLayer.lineWidth = path.lineWidth * scale
+      strokeLayer.path = pathCopy.CGPath
     }
+    
   }
 }
 
