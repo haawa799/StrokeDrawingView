@@ -4,10 +4,10 @@ source 'https://github.com/haawa799/private-podspecs.git'
 use_frameworks!
 
 target 'StrokeDrawingView_Example', :exclusive => true do
-  pod "StrokeDrawingView"
+  pod "StrokeDrawingView", :path => "../"
 end
 
 target 'StrokeDrawingView_Tests', :exclusive => true do
-  pod "StrokeDrawingView"
+  pod "StrokeDrawingView", :path => "../"
   pod 'FBSnapshotTestCase'
 end

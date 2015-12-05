@@ -50,7 +50,6 @@
 		96311C5E2A7408357CB15E38 /* Pods_StrokeDrawingView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StrokeDrawingView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0854A38A6204ED31A36ACA8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0AFA8B2D8B676C75EEABFFC /* Pods-StrokeDrawingView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Example/Pods-StrokeDrawingView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CFD4E82A39FD4E0C59434A60 /* StrokeDrawingView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StrokeDrawingView.podspec; path = ../StrokeDrawingView.podspec; sourceTree = "<group>"; };
 		D9F5EDFFAD21DE874459D2D6 /* Pods_StrokeDrawingView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StrokeDrawingView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,7 +158,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				CFD4E82A39FD4E0C59434A60 /* StrokeDrawingView.podspec */,
 				B0854A38A6204ED31A36ACA8 /* README.md */,
 				36B7393DAC326B5ED82B5BC5 /* LICENSE */,
 			);

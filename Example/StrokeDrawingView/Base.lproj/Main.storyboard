@@ -32,8 +32,10 @@
                         <color key="backgroundColor" red="0.49803921569999998" green="0.81176470590000005" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GeP-Qh-Y7m" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="D3e-Q2-IC3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GeP-Qh-Y7m" secondAttribute="bottom" constant="20" id="FJH-Sh-XZX"/>
                             <constraint firstItem="GeP-Qh-Y7m" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Rcl-zl-O7k"/>
-                            <constraint firstItem="GeP-Qh-Y7m" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.7" id="sNk-pG-OpU"/>
+                            <constraint firstItem="GeP-Qh-Y7m" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="dwh-uk-xlH"/>
+                            <constraint firstItem="GeP-Qh-Y7m" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.7" priority="750" id="sNk-pG-OpU"/>
                         </constraints>
                     </view>
                     <connections>
