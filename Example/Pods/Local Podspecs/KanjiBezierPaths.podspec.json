@@ -1,0 +1,25 @@
+{
+  "name": "KanjiBezierPaths",
+  "version": "0.1.0",
+  "summary": "A short description of KanjiBezierPaths.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/KanjiBezierPaths",
+  "license": "MIT",
+  "authors": {
+    "Andriy K.": "haawaplus@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/KanjiBezierPaths.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "KanjiBezierPaths": [
+      "Pod/Assets/*"
+    ]
+  }
+}

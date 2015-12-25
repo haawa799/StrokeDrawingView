@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'StrokeDrawingView_Example', :exclusive => true do
   pod "StrokeDrawingView", :path => "../"
+  pod "KanjiBezierPaths", :git => 'https://github.com/haawa799/KanjiBezierPaths.git'
 end
 
 target 'StrokeDrawingView_Tests', :exclusive => true do

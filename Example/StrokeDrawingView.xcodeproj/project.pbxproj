@@ -11,13 +11,14 @@
 		430915871C11708D0097A19F /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430915851C116D2E0097A19F /* Kanji.swift */; };
 		430ECC141C108A7700087B43 /* StrokeDrawingViewTests in Resources */ = {isa = PBXBuildFile; fileRef = 430ECC131C108A7700087B43 /* StrokeDrawingViewTests */; };
 		437A7AB81C1086B4008D82E8 /* StrokesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A7AB71C1086B4008D82E8 /* StrokesTest.swift */; };
+		439587BD1C2D8D8100559B31 /* StrokeDrawingView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 439587BC1C2D8D8100559B31 /* StrokeDrawingView.podspec */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		AD3875EDE702A139973F7958 /* Pods_StrokeDrawingView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96311C5E2A7408357CB15E38 /* Pods_StrokeDrawingView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C0C8D5688A8DD34787CDC2A7 /* Pods_StrokeDrawingView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F5EDFFAD21DE874459D2D6 /* Pods_StrokeDrawingView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AD3875EDE702A139973F7958 /* Pods_StrokeDrawingView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96311C5E2A7408357CB15E38 /* Pods_StrokeDrawingView_Example.framework */; };
+		C0C8D5688A8DD34787CDC2A7 /* Pods_StrokeDrawingView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F5EDFFAD21DE874459D2D6 /* Pods_StrokeDrawingView_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		430915851C116D2E0097A19F /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		430ECC131C108A7700087B43 /* StrokeDrawingViewTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StrokeDrawingViewTests; sourceTree = "<group>"; };
 		437A7AB71C1086B4008D82E8 /* StrokesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokesTest.swift; sourceTree = "<group>"; };
+		439587BC1C2D8D8100559B31 /* StrokeDrawingView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = StrokeDrawingView.podspec; path = ../StrokeDrawingView.podspec; sourceTree = "<group>"; };
 		49880ACE9443BB03D1FAB779 /* Pods-StrokeDrawingView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Tests/Pods-StrokeDrawingView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5A07545B2C3890D01E97DDC5 /* Pods-StrokeDrawingView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrokeDrawingView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrokeDrawingView_Tests/Pods-StrokeDrawingView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StrokeDrawingView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeDrawingView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				439587BC1C2D8D8100559B31 /* StrokeDrawingView.podspec */,
 				B0854A38A6204ED31A36ACA8 /* README.md */,
 				36B7393DAC326B5ED82B5BC5 /* LICENSE */,
 			);
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				439587BD1C2D8D8100559B31 /* StrokeDrawingView.podspec in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				430ECC141C108A7700087B43 /* StrokeDrawingViewTests in Resources */,
