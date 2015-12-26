@@ -11,7 +11,7 @@ import StrokeDrawingView
 
 class ViewController: UIViewController {
   
-  let kanji = Kanji()
+  let kanji = Kanji(kanji: "数")
   var shouldPlay = true
   
   @IBOutlet weak var strokedView: StrokeDrawingView! {

@@ -12,7 +12,6 @@ import StrokeDrawingView
 
 
 class TestCase0: FBSnapshotTestCase {
-  let dataSource = TestDataSource()
   
   var viewToTest: StrokeDrawingView!
   
@@ -20,7 +19,7 @@ class TestCase0: FBSnapshotTestCase {
     super.setUp()
     
     viewToTest = StrokeDrawingView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-    viewToTest.dataSource = dataSource
+    viewToTest.dataSource = TestDataSource(version: 0)
     viewToTest.backgroundColor = UIColor.whiteColor()
     viewToTest.drawRect(viewToTest.bounds)
     
@@ -28,19 +27,84 @@ class TestCase0: FBSnapshotTestCase {
     usesDrawViewHierarchyInRect = true
   }
   
-  func testFullDrawn() {
+  func testFullDrawn0() {
+    viewToTest.dataSource = TestDataSource(version: 0)
     viewToTest.setStrokesProgress(1)
     viewToTest.drawRect(viewToTest.bounds)
     
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn1() {
+    viewToTest.dataSource = TestDataSource(version: 1)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
+    
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn2() {
+    viewToTest.dataSource = TestDataSource(version: 2)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
+    
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn3() {
+    viewToTest.dataSource = TestDataSource(version: 3)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
+    
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn4() {
+    viewToTest.dataSource = TestDataSource(version: 4)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
+    
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn5() {
+    viewToTest.dataSource = TestDataSource(version: 5)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
+    
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn6() {
+    viewToTest.dataSource = TestDataSource(version: 6)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
+    
+    FBSnapshotVerifyView(viewToTest)
+  }
+  
+  func testFullDrawn7() {
+    viewToTest.dataSource = TestDataSource(version: 7)
+    viewToTest.setStrokesProgress(1)
+    viewToTest.drawRect(viewToTest.bounds)
     
     FBSnapshotVerifyView(viewToTest)
   }
   
 }
 
-let kanji = Kanji()
-
 class TestDataSource : StrokeDrawingViewDataSource {
+  
+  let kanjiArray = [Kanji(kanji: "数"),Kanji(kanji: "京"),Kanji(kanji: "苦"),Kanji(kanji: "働"),Kanji(kanji: "指"),Kanji(kanji: "郎"),Kanji(kanji: "病"),Kanji(kanji: "院")]
+  let index: Int
+  var kanji: Kanji {
+    return kanjiArray[index]
+  }
+  
+  init(version: Int) {
+    index = version
+  }
+  
   func sizeOfDrawing() -> CGSize {
     return CGSize(width: 109, height: 109)
   }

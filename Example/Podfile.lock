@@ -1,10 +1,12 @@
 PODS:
+  - AWSQLiteDB (0.1.2)
   - FBSnapshotTestCase (2.0.7):
     - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
   - FBSnapshotTestCase/Core (2.0.7)
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - KanjiBezierPaths (0.1.0)
+  - KanjiBezierPaths (0.1.0):
+    - AWSQLiteDB
   - StrokeDrawingView (0.1.1)
 
 DEPENDENCIES:
@@ -20,12 +22,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   KanjiBezierPaths:
-    :commit: 3d840dcb970b322d73c28e5dfea89697a50ecb9f
+    :commit: 3eb70668cde480ab24698d211c30a28a6378d13d
     :git: https://github.com/haawa799/KanjiBezierPaths.git
 
 SPEC CHECKSUMS:
+  AWSQLiteDB: 233c76f09d185268b77102860e4435773e93dbc1
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  KanjiBezierPaths: 3cd4278db5b04f6628eb9005109a70093c831056
+  KanjiBezierPaths: ea25ba285699b1b506492597df9e02a93ffbc1ef
   StrokeDrawingView: 5d26664a4391804118fbfc2b3d4a5235a0057749
 
 COCOAPODS: 0.39.0

@@ -1,25 +1,27 @@
 {
   "name": "KanjiBezierPaths",
+  "homepage": "https://github.com/haawa799/KanjiBezierPaths/tree/master",
   "version": "0.1.0",
-  "summary": "A short description of KanjiBezierPaths.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/KanjiBezierPaths",
-  "license": "MIT",
+  "summary": "Returns kanji strokes as an array of UIBezierPathes",
+  "license": {
+    "type": "MIT"
+  },
   "authors": {
-    "Andriy K.": "haawaplus@gmail.com"
+    "Andriy Kharchyshyn": "haawaplus@gmail.com"
   },
-  "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/KanjiBezierPaths.git",
-    "tag": "0.1.0"
-  },
+  "requires_arc": true,
   "platforms": {
     "ios": "8.0"
   },
-  "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "KanjiBezierPaths": [
       "Pod/Assets/*"
+    ]
+  },
+  "dependencies": {
+    "AWSQLiteDB": [
+
     ]
   }
 }

@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-StrokeDrawingView_Example/AWSQLiteDB.framework"
   install_framework "Pods-StrokeDrawingView_Example/KanjiBezierPaths.framework"
   install_framework "Pods-StrokeDrawingView_Example/StrokeDrawingView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-StrokeDrawingView_Example/AWSQLiteDB.framework"
   install_framework "Pods-StrokeDrawingView_Example/KanjiBezierPaths.framework"
   install_framework "Pods-StrokeDrawingView_Example/StrokeDrawingView.framework"
 fi
