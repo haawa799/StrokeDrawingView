@@ -20,6 +20,7 @@
 		35E13C17BAC7AE3A39B2EC2FEEA256C4 /* Pods-StrokeDrawingView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 839AF34E24C070828D35356B2BECA20C /* Pods-StrokeDrawingView_Example-dummy.m */; };
 		3EB3826C20A8FBC2574E5710544A5008 /* Pods-StrokeDrawingView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3929BFD514044D993240B3628B1F3D1D /* Pods-StrokeDrawingView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41D8739E2720D3535592391C25507158 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB246881FBD7DA2751012268031EE1C /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435F72AC1C3148E400FCFCC5 /* BackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F72AB1C3148E400FCFCC5 /* BackgroundLayer.swift */; };
 		493ABF61C718CE8F6B037E1909BABB03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11B96DBAD3AB8AC4F63B59B95AE9229 /* Foundation.framework */; };
 		52B0263F90696E7FD87CB146D5C5E2C1 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 534E753FF819E62D5377CB1E5CF57BB1 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F798C9F9DCE651A4AD756B4D76430F11 /* SwiftSupport.swift */; };
@@ -119,6 +120,7 @@
 		3929BFD514044D993240B3628B1F3D1D /* Pods-StrokeDrawingView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StrokeDrawingView_Example-umbrella.h"; sourceTree = "<group>"; };
 		3BB3BD25B48D486546B8DFE95A1865C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		410BDC9F310C9E943FA5A34C38A7C53C /* StrokeDrawingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StrokeDrawingView-umbrella.h"; sourceTree = "<group>"; };
+		435F72AB1C3148E400FCFCC5 /* BackgroundLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundLayer.swift; sourceTree = "<group>"; };
 		4632131B9D458459316925416A38DD58 /* AWSQLiteDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSQLiteDB-dummy.m"; sourceTree = "<group>"; };
 		4764018121CD618D06BF2C4411B727A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BDCCEFA8CE6AFC92909E0EA2E298AC8 /* StrokeDrawingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = StrokeDrawingView.modulemap; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 		74014C723110A3D79D557D843381B6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				435F72AB1C3148E400FCFCC5 /* BackgroundLayer.swift */,
 				A7ED75DD2214D8029728B6A3116996B6 /* StrokeDrawingView.swift */,
 			);
 			path = Classes;
@@ -755,6 +758,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5ED490C64DE999B03423EAD21F8A18 /* StrokeDrawingView-dummy.m in Sources */,
+				435F72AC1C3148E400FCFCC5 /* BackgroundLayer.swift in Sources */,
 				03952E581A246A357B39E56A50D645CC /* StrokeDrawingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

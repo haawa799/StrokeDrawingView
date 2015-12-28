@@ -36,6 +36,11 @@ public protocol StrokeDrawingViewDataSource: class {
   func pathForIndex(index: Int) -> UIBezierPath
   func animationDurationForStroke(index: Int) -> CFTimeInterval
   func colorForStrokeAtIndex(index: Int) -> UIColor
+  func colorForUnderlineStrokes() -> UIColor?
+}
+
+public protocol StrokeDrawingViewDataDelegate: class {
+  func layersAreNowReadyForAnimation()
 }
 
 public class StrokeDrawingView: UIView {
@@ -44,6 +49,7 @@ public class StrokeDrawingView: UIView {
   private var numberOfStrokes: Int { return dataSource?.numberOfStrokes() ?? 0 }
   private var shouldDraw = false
   private var strokeLayers = [CAShapeLayer]()
+  private var backgroundLayer = BackgroundLayer()
   private var drawingSize = CGSizeZero
   private var animations = [CABasicAnimation]()
   private var timer: NSTimer?
@@ -62,6 +68,8 @@ public class StrokeDrawingView: UIView {
       setNeedsDisplay()
     }
   }
+  
+  public var delegate: StrokeDrawingViewDataDelegate?
   
   /// Use this method to run looped animation
   public func playForever(delayBeforeEach: CFTimeInterval = 0) {
@@ -83,6 +91,15 @@ public class StrokeDrawingView: UIView {
     pauseLayers()
   }
   
+  public func clean() {
+    removeAnimationFromEachLayer()
+    resetLayers()
+    for layer in strokeLayers {
+      layer.removeFromSuperlayer()
+    }
+    strokeLayers = [CAShapeLayer]()
+  }
+  
   /// Use this method to run single animation cycle
   public func playSingleAnimation() {
     removeAnimationFromEachLayer()
@@ -91,6 +108,7 @@ public class StrokeDrawingView: UIView {
     
     var counter = 0
     var duration: CFTimeInterval = CACurrentMediaTime()
+    
     for strokeLayer in strokeLayers {
       
       let delay = duration
@@ -140,6 +158,8 @@ extension StrokeDrawingView {
     
     if shouldDraw == true && numberOfStrokes > 0 {
       
+      layer.addSublayer(backgroundLayer)
+      
       for strokeIndex in 0..<numberOfStrokes {
         
         let color = dataSource?.colorForStrokeAtIndex(strokeIndex) ?? UIColor.blackColor()
@@ -155,6 +175,7 @@ extension StrokeDrawingView {
         strokeLayers.append(shapeLayer)
       }
       shouldDraw = false
+      delegate?.layersAreNowReadyForAnimation()
     }
   }
   
@@ -180,18 +201,28 @@ extension StrokeDrawingView {
     
     let scale: CGFloat = bounds.height / drawingSize.height
     
+    var pathes = [UIBezierPath]()
+    
     for strokeIndex in 0..<numberOfStrokes {
       
       let strokeLayer = strokeLayers[strokeIndex]
       
       let path = dataSource.pathForIndex(strokeIndex)
       let pathCopy = UIBezierPath(CGPath: path.CGPath)
+      pathCopy.lineWidth = path.lineWidth * scale
+      pathes.append(pathCopy)
       pathCopy.applyTransform(CGAffineTransformMakeScale(scale, scale))
       
       strokeLayer.lineWidth = path.lineWidth * scale
       strokeLayer.path = pathCopy.CGPath
     }
     
+    if let underlineColor = dataSource.colorForUnderlineStrokes() {
+      backgroundLayer.frame = bounds
+      backgroundLayer.strokeColor = underlineColor
+      backgroundLayer.strokes = pathes
+      backgroundLayer.setNeedsDisplay()
+    }
   }
 }
 

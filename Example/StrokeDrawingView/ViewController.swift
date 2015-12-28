@@ -56,5 +56,10 @@ extension ViewController: StrokeDrawingViewDataSource {
       default: return kanji.color2
     }
   }
+  
+  func colorForUnderlineStrokes() -> UIColor? {
+    return UIColor.lightGrayColor()
+  }
+  
 }
 

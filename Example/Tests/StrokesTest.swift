@@ -130,5 +130,9 @@ class TestDataSource : StrokeDrawingViewDataSource {
     default: return kanji.color2
     }
   }
+  
+  func colorForUnderlineStrokes() -> UIColor? {
+    return nil
+  }
 }
 
