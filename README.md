@@ -1,5 +1,6 @@
 # StrokeDrawingView 🖌🎨🈲
 
+[![Build Status](https://travis-ci.org/haawa799/StrokeDrawingView.svg?branch=master)](https://travis-ci.org/haawa799/StrokeDrawingView)
 [![License](https://img.shields.io/cocoapods/l/StrokeDrawingView.svg?style=flat)](http://cocoapods.org/pods/StrokeDrawingView)
 [![Platform](https://img.shields.io/cocoapods/p/StrokeDrawingView.svg?style=flat)](http://cocoapods.org/pods/StrokeDrawingView)
 
