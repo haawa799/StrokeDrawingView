@@ -11,13 +11,6 @@
 		5D63B78B1EB9BB660065037F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7881EB9BB660065037F /* Realm.framework */; };
 		5D63B78C1EB9BB660065037F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7891EB9BB660065037F /* RealmSwift.framework */; };
 		5D63B78F1EB9BC740065037F /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D63B78E1EB9BC740065037F /* Kanji.swift */; };
-		5D63B7911EB9BF180065037F /* StrokesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D63B7901EB9BF180065037F /* StrokesTest.swift */; };
-		5D63B7931EB9C00B0065037F /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7921EB9C00B0065037F /* FBSnapshotTestCase.framework */; };
-		5D63B7941EB9C0400065037F /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D63B78E1EB9BC740065037F /* Kanji.swift */; };
-		5D63B7951EB9C04E0065037F /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7871EB9BB660065037F /* KanjiBezierPaths.framework */; };
-		5D63B7961EB9C04E0065037F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7881EB9BB660065037F /* Realm.framework */; };
-		5D63B7971EB9C04E0065037F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7891EB9BB660065037F /* RealmSwift.framework */; };
-		5D72349E1EB8D49B00668423 /* StrokeDrawingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7234941EB8D49B00668423 /* StrokeDrawingView.framework */; };
 		5D7234A51EB8D49B00668423 /* StrokeDrawingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7234971EB8D49B00668423 /* StrokeDrawingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D7234B01EB8D50400668423 /* BackgroundLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7234AE1EB8D50400668423 /* BackgroundLayer.swift */; };
 		5D7234B11EB8D50400668423 /* StrokeDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7234AF1EB8D50400668423 /* StrokeDrawingView.swift */; };
@@ -27,15 +20,20 @@
 		5D7234C01EB8D71000668423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7234BF1EB8D71000668423 /* Assets.xcassets */; };
 		5D7234C31EB8D71000668423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7234C11EB8D71000668423 /* LaunchScreen.storyboard */; };
 		5D7234C81EB8D72D00668423 /* StrokeDrawingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7234941EB8D49B00668423 /* StrokeDrawingView.framework */; };
+		5DA7D6E11EB9CA4E00FBE760 /* StrokesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA7D6E01EB9CA4E00FBE760 /* StrokesTest.swift */; };
+		5DA7D6E21EB9CA6D00FBE760 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7921EB9C00B0065037F /* FBSnapshotTestCase.framework */; };
+		5DA7D6E31EB9CA6D00FBE760 /* KanjiBezierPaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7871EB9BB660065037F /* KanjiBezierPaths.framework */; };
+		5DA7D6E41EB9CA6D00FBE760 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7881EB9BB660065037F /* Realm.framework */; };
+		5DA7D6E51EB9CA6D00FBE760 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D63B7891EB9BB660065037F /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D72349F1EB8D49B00668423 /* PBXContainerItemProxy */ = {
+		5DA7D6DB1EB9CA1300FBE760 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D72348B1EB8D49B00668423 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D7234931EB8D49B00668423;
-			remoteInfo = StrokeDrawingView;
+			remoteGlobalIDString = 5D7234B51EB8D71000668423;
+			remoteInfo = Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,13 +42,10 @@
 		5D63B7881EB9BB660065037F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		5D63B7891EB9BB660065037F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		5D63B78E1EB9BC740065037F /* Kanji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
-		5D63B7901EB9BF180065037F /* StrokesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokesTest.swift; sourceTree = "<group>"; };
 		5D63B7921EB9C00B0065037F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		5D7234941EB8D49B00668423 /* StrokeDrawingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StrokeDrawingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7234971EB8D49B00668423 /* StrokeDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrokeDrawingView.h; sourceTree = "<group>"; };
 		5D7234981EB8D49B00668423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D72349D1EB8D49B00668423 /* StrokeDrawingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrokeDrawingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D7234A41EB8D49B00668423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D7234AE1EB8D50400668423 /* BackgroundLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundLayer.swift; sourceTree = "<group>"; };
 		5D7234AF1EB8D50400668423 /* StrokeDrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeDrawingView.swift; sourceTree = "<group>"; };
 		5D7234B61EB8D71000668423 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +55,9 @@
 		5D7234BF1EB8D71000668423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7234C21EB8D71000668423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D7234C41EB8D71000668423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA7D6D61EB9CA1300FBE760 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA7D6DA1EB9CA1300FBE760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA7D6E01EB9CA4E00FBE760 /* StrokesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,18 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D72349A1EB8D49B00668423 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D72349E1EB8D49B00668423 /* StrokeDrawingView.framework in Frameworks */,
-				5D63B7931EB9C00B0065037F /* FBSnapshotTestCase.framework in Frameworks */,
-				5D63B7951EB9C04E0065037F /* KanjiBezierPaths.framework in Frameworks */,
-				5D63B7961EB9C04E0065037F /* Realm.framework in Frameworks */,
-				5D63B7971EB9C04E0065037F /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +76,17 @@
 				5D63B78A1EB9BB660065037F /* KanjiBezierPaths.framework in Frameworks */,
 				5D63B78B1EB9BB660065037F /* Realm.framework in Frameworks */,
 				5D63B78C1EB9BB660065037F /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA7D6D31EB9CA1300FBE760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA7D6E21EB9CA6D00FBE760 /* FBSnapshotTestCase.framework in Frameworks */,
+				5DA7D6E31EB9CA6D00FBE760 /* KanjiBezierPaths.framework in Frameworks */,
+				5DA7D6E41EB9CA6D00FBE760 /* Realm.framework in Frameworks */,
+				5DA7D6E51EB9CA6D00FBE760 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				5D7234961EB8D49B00668423 /* StrokeDrawingView */,
-				5D7234A11EB8D49B00668423 /* StrokeDrawingViewTests */,
 				5D7234B71EB8D71000668423 /* Example */,
+				5DA7D6D71EB9CA1300FBE760 /* ExampleTests */,
 				5D7234951EB8D49B00668423 /* Products */,
 				5D63B7861EB9BB660065037F /* Frameworks */,
 			);
@@ -122,8 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				5D7234941EB8D49B00668423 /* StrokeDrawingView.framework */,
-				5D72349D1EB8D49B00668423 /* StrokeDrawingViewTests.xctest */,
 				5D7234B61EB8D71000668423 /* Example.app */,
+				5DA7D6D61EB9CA1300FBE760 /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,15 +136,6 @@
 			path = StrokeDrawingView;
 			sourceTree = "<group>";
 		};
-		5D7234A11EB8D49B00668423 /* StrokeDrawingViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D63B7901EB9BF180065037F /* StrokesTest.swift */,
-				5D7234A41EB8D49B00668423 /* Info.plist */,
-			);
-			path = StrokeDrawingViewTests;
-			sourceTree = "<group>";
-		};
 		5D7234B71EB8D71000668423 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +148,15 @@
 				5D7234C41EB8D71000668423 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		5DA7D6D71EB9CA1300FBE760 /* ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DA7D6E01EB9CA4E00FBE760 /* StrokesTest.swift */,
+				5DA7D6DA1EB9CA1300FBE760 /* Info.plist */,
+			);
+			path = ExampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,25 +191,6 @@
 			productReference = 5D7234941EB8D49B00668423 /* StrokeDrawingView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5D72349C1EB8D49B00668423 /* StrokeDrawingViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5D7234AB1EB8D49B00668423 /* Build configuration list for PBXNativeTarget "StrokeDrawingViewTests" */;
-			buildPhases = (
-				5D7234991EB8D49B00668423 /* Sources */,
-				5D72349A1EB8D49B00668423 /* Frameworks */,
-				5D72349B1EB8D49B00668423 /* Resources */,
-				5D63B7981EB9C0510065037F /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5D7234A01EB8D49B00668423 /* PBXTargetDependency */,
-			);
-			name = StrokeDrawingViewTests;
-			productName = StrokeDrawingViewTests;
-			productReference = 5D72349D1EB8D49B00668423 /* StrokeDrawingViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5D7234B51EB8D71000668423 /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7234C51EB8D71000668423 /* Build configuration list for PBXNativeTarget "Example" */;
@@ -231,6 +209,25 @@
 			productReference = 5D7234B61EB8D71000668423 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5DA7D6D51EB9CA1300FBE760 /* ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA7D6DD1EB9CA1300FBE760 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
+			buildPhases = (
+				5DA7D6D21EB9CA1300FBE760 /* Sources */,
+				5DA7D6D31EB9CA1300FBE760 /* Frameworks */,
+				5DA7D6D41EB9CA1300FBE760 /* Resources */,
+				5DA7D6E61EB9CA7100FBE760 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA7D6DC1EB9CA1300FBE760 /* PBXTargetDependency */,
+			);
+			name = ExampleTests;
+			productName = ExampleTests;
+			productReference = 5DA7D6D61EB9CA1300FBE760 /* ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,13 +243,15 @@
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					5D72349C1EB8D49B00668423 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-					};
 					5D7234B51EB8D71000668423 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
+					};
+					5DA7D6D51EB9CA1300FBE760 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5D7234B51EB8D71000668423;
 					};
 				};
 			};
@@ -270,21 +269,14 @@
 			projectRoot = "";
 			targets = (
 				5D7234931EB8D49B00668423 /* StrokeDrawingView */,
-				5D72349C1EB8D49B00668423 /* StrokeDrawingViewTests */,
 				5D7234B51EB8D71000668423 /* Example */,
+				5DA7D6D51EB9CA1300FBE760 /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5D7234921EB8D49B00668423 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D72349B1EB8D49B00668423 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +290,13 @@
 				5D7234C31EB8D71000668423 /* LaunchScreen.storyboard in Resources */,
 				5D7234C01EB8D71000668423 /* Assets.xcassets in Resources */,
 				5D7234BE1EB8D71000668423 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA7D6D41EB9CA1300FBE760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +319,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
-		5D63B7981EB9C0510065037F /* ShellScript */ = {
+		5DA7D6E61EB9CA7100FBE760 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,7 +327,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KanjiBezierPaths.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
 			);
@@ -350,15 +348,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D7234991EB8D49B00668423 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5D63B7911EB9BF180065037F /* StrokesTest.swift in Sources */,
-				5D63B7941EB9C0400065037F /* Kanji.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5D7234B21EB8D71000668423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,13 +358,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DA7D6D21EB9CA1300FBE760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA7D6E11EB9CA4E00FBE760 /* StrokesTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D7234A01EB8D49B00668423 /* PBXTargetDependency */ = {
+		5DA7D6DC1EB9CA1300FBE760 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D7234931EB8D49B00668423 /* StrokeDrawingView */;
-			targetProxy = 5D72349F1EB8D49B00668423 /* PBXContainerItemProxy */;
+			target = 5D7234B51EB8D71000668423 /* Example */;
+			targetProxy = 5DA7D6DB1EB9CA1300FBE760 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -539,38 +536,6 @@
 			};
 			name = Release;
 		};
-		5D7234AC1EB8D49B00668423 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = StrokeDrawingViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.StrokeDrawingViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		5D7234AD1EB8D49B00668423 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = StrokeDrawingViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.StrokeDrawingViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		5D7234C61EB8D71000668423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -603,6 +568,43 @@
 			};
 			name = Release;
 		};
+		5DA7D6DE1EB9CA1300FBE760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		5DA7D6DF1EB9CA1300FBE760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,15 +626,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D7234AB1EB8D49B00668423 /* Build configuration list for PBXNativeTarget "StrokeDrawingViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5D7234AC1EB8D49B00668423 /* Debug */,
-				5D7234AD1EB8D49B00668423 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5D7234C51EB8D71000668423 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -641,6 +634,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5DA7D6DD1EB9CA1300FBE760 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA7D6DE1EB9CA1300FBE760 /* Debug */,
+				5DA7D6DF1EB9CA1300FBE760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
