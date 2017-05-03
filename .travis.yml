@@ -1,0 +1,11 @@
+language: objective-c
+osx_image: xcode8.3
+xcode_project: StrokeDrawingView.xcodeproj
+env:
+  - ACTION=test  PLATFORM=iOS        SCHEME='Example'          DESTINATION='platform=iOS Simulator,OS=10.3,name=iPhone SE'
+
+install:
+  - carthage bootstrap --platform $PLATFORM
+
+script:
+  - set -o pipefail && xcodebuild -scheme "$SCHEME" -destination "$DESTINATION" clean $ACTION | xcpretty

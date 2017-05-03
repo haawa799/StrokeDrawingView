@@ -19,16 +19,18 @@ class TestCase0: FBSnapshotTestCase {
   override func setUp() {
     super.setUp()
     viewToTest = StrokeDrawingView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-    recordMode = true
-//    usesDrawViewHierarchyInRect = true
-  }
-  
-  func testFullDrawn0() {
-    viewToTest = StrokeDrawingView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
+    viewToTest.backgroundColor = UIColor.white
     viewToTest.dataSource = TestDataSource(version: 0)
     viewToTest.setStrokesProgress(progress: 1)
     viewToTest.draw(viewToTest.bounds)
-    
+//    recordMode = true
+    usesDrawViewHierarchyInRect = true
+  }
+  
+  func testFullDrawn0() {
+    viewToTest.dataSource = TestDataSource(version: 0)
+    viewToTest.setStrokesProgress(progress: 1)
+    viewToTest.draw(viewToTest.bounds)
     FBSnapshotVerifyView(viewToTest)
   }
   
@@ -131,5 +133,15 @@ class TestDataSource : StrokeDrawingViewDataSource {
   func colorForUnderlineStrokes() -> UIColor? {
     return nil
   }
+}
+
+extension UIImage {
+    convenience init(view: UIView) {
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        self.init(cgImage: image!.cgImage!)
+    }
 }
 
