@@ -1,6 +1,0 @@
-framework module Pods_StrokeDrawingView_Tests {
-  umbrella header "Pods-StrokeDrawingView_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
