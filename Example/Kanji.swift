@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import KanjiBezierPaths
+import KanjiStrokesKit
 
 struct Kanji {
     
-    static let kanjiProvider = KanjiProvider()
+    static let kanjiProvider = try! KanjiProvider()
     
     let color0 = UIColor(red:0.95, green:0, blue:0.63, alpha:1)
     let color1 = UIColor(red:0.63, green:0, blue:0.95, alpha:1)

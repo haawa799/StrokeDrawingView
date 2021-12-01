@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "KanjiStrokesKit",
+        "repositoryURL": "https://github.com/haawa799/KanjiStrokesKit",
+        "state": {
+          "branch": null,
+          "revision": "919c715f29e150279c9c1b1f7bfc2d1e222769cc",
+          "version": "1.0.5"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa.git",
+        "state": {
+          "branch": null,
+          "revision": "bdbbd57f411a0f4e72b359113dbc6d23fdf96680",
+          "version": "10.20.0"
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "c3c11a841642ac93c27bd1edd61f989fc0bfb809",
+          "version": "11.6.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

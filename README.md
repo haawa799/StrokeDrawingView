@@ -10,7 +10,7 @@
 
 ## Result
 
-![StrokeDrawingView demo](http://cl.ly/image/312l0d3n1A1Z/ezgif.com-gif-maker.gif)
+![StrokeDrawingView demo](screenshot.png)
 
 ## Usage
 
